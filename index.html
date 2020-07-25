@@ -51,7 +51,31 @@
         </div>
       </div>
     </div>
-    <button id="rules">RULES</button>
+    <button id="rules" onclick="rules()">
+      RULES
+    </button>
+    <div class="modal">
+      <div class="modal-inner">
+        <div class="modal-header">
+          <div class="modal-title"><center>RULES</center></div>
+          <img
+            src="./images/icon-close.svg"
+            alt=""
+            class="close md-size"
+            onclick="closeModal()"
+          />
+        </div>
+        <div class="modal-body">
+          <img src="./images/image-rules.svg" alt="" />
+        </div>
+        <img
+          src="./images/icon-close.svg"
+          alt=""
+          class="close xs-size"
+          onclick="closeModal()"
+        />
+      </div>
+    </div>
     <!-- <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"

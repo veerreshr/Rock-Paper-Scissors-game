@@ -13,6 +13,8 @@ body {
   align-items: center;
   font-family: "Barlow Semi Condensed", sans-serif;
   flex-direction: column;
+  /* font-smooth: auto; */
+  min-height: 100vh;
 }
 .header {
   border: 2px solid hsl(217, 16%, 45%);
@@ -20,7 +22,7 @@ body {
   width: 40vw;
   padding: 20px;
   height: 10vh;
-  margin-top: 30px;
+  /* margin-top: 20px; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -232,4 +234,121 @@ body {
   box-shadow: 0px 0px 5px 50px hsl(214, 47%, 24%),
     0px 0px 5px 110px hsla(214, 47%, 22%, 0.7),
     0px 0px 5px 180px hsla(214, 47%, 20%, 0.7);
+}
+.modal {
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  align-items: center;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.387);
+}
+.modal-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-width: 22vw;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 100%;
+  padding: 0px 10px 10px 10px;
+}
+.modal-header .modal-title {
+  font-size: 30px;
+  color: hsl(229, 25%, 31%);
+  margin-bottom: 10px;
+}
+.modal-header .close:hover {
+  cursor: pointer;
+}
+.modal > .modal-inner > .xs-size {
+  visibility: hidden;
+}
+
+@media only screen and (max-width: 768px) {
+  .modal-inner {
+    justify-content: space-evenly;
+    width: 100vw;
+    height: 100vh;
+  }
+  .modal > .modal-inner > .xs-size {
+    visibility: hidden;
+  }
+  .md-size {
+    visibility: hidden;
+  }
+  .modal-header {
+    display: block;
+    padding: 0;
+    margin: 0;
+  }
+  .header {
+    width: 80vw;
+    padding: 10px;
+  }
+  .header > img {
+    transform: scale(0.6) translateX(-10vw);
+  }
+  .score-container {
+    min-height: 80%;
+    max-height: 100%;
+    padding: 2px 15px;
+  }
+  #score {
+    font-size: 30;
+    font-weight: 600;
+    transform: translateY(-5px);
+  }
+  #score-text {
+    font-size: 14px;
+    transform: translateY(5px);
+  }
+  #rules {
+    left: 50vw;
+    transform: translateX(-50%);
+  }
+  .game {
+    width: 100vw;
+    height: 60vh;
+    background-size: 60%;
+  }
+  .paper,
+  .scissor,
+  .rock,
+  .blank {
+    cursor: pointer;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 15px;
+    background-color: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0px 4px 0px 0px rgba(0, 0, 0, 0.3);
+  }
+  .paper::before,
+  .scissor::before,
+  .rock::before {
+    margin: -15px;
+    box-shadow: inset 0px -4px 0px 0px rgba(0, 0, 0, 0.3);
+  }
+  .paper > img,
+  .scissor > img,
+  .rock > img {
+    transform: scale(0.8);
+  }
 }
