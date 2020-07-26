@@ -33,23 +33,62 @@
       <img src="./images/logo.svg" alt="" />
       <div class="score-container">
         <span id="score-text">score</span>
-        <span id="score">12</span>
+        <span id="score"></span>
       </div>
     </div>
     <div class="game">
       <div class="row1">
-        <div class="paper">
+        <div class="paper" onclick="picked(1)">
           <img src="./images/icon-paper.svg" alt="" />
         </div>
-        <div class="scissor">
+        <div class="scissor" onclick="picked(2)">
           <img src="./images/icon-scissors.svg" alt="" />
         </div>
       </div>
       <div class="row2">
-        <div class="rock">
+        <div class="rock" onclick="picked(3)">
           <img src="./images/icon-rock.svg" alt="" />
         </div>
       </div>
+    </div>
+    <div class="pick hide">
+      <div class="you-picked">
+        <center><h2>YOU PICKED</h2></center>
+        <div class="paper hide">
+          <img src="./images/icon-paper.svg" alt="" />
+        </div>
+        <div class="scissor hide">
+          <img src="./images/icon-scissors.svg" alt="" />
+        </div>
+        <div class="rock hide">
+          <img src="./images/icon-rock.svg" alt="" />
+        </div>
+      </div>
+      <div class="result">
+        <center><h1 class="winloosetie"></h1></center>
+        <button class="playagain hide" onclick="playagain()">PLAY AGAIN</button
+        ><!-- class="loose-text" -->
+      </div>
+      <div class="house-picked">
+        <center><h2>THE HOUSE PICKED</h2></center>
+        <div class="paper hide">
+          <img src="./images/icon-paper.svg" alt="" />
+        </div>
+        <div class="scissor hide">
+          <img src="./images/icon-scissors.svg" alt="" />
+        </div>
+        <div class="rock hide">
+          <img src="./images/icon-rock.svg" alt="" />
+        </div>
+        <div class="blank"></div>
+      </div>
+    </div>
+    <div class="xs-result hide">
+      <!-----need to unhide when its results page-->
+      <center><h1 class="winloosetie"></h1></center>
+      <button class="playagain hide" onclick="playagain()">
+        PLAY AGAIN
+      </button>
     </div>
     <button id="rules" onclick="rules()">
       RULES
@@ -76,6 +115,7 @@
         />
       </div>
     </div>
+
     <!-- <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
