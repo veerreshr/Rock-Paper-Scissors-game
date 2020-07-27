@@ -171,7 +171,6 @@ body {
   align-items: center;
   min-height: 60vh;
   flex-wrap: nowrap;
-  transform: translateY(-10%);
 }
 .you-picked,
 .house-picked {
