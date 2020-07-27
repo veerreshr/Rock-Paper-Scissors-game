@@ -71,6 +71,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-evenly;
   z-index: 1;
+  transform: translateY(-10%);
 }
 .row1,
 .row2 {
