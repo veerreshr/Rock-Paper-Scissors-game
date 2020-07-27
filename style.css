@@ -16,6 +16,10 @@ body {
   /* font-smooth: auto; */
   min-height: 100vh;
 }
+.center {
+  text-align: center;
+  width: 100%;
+}
 .hide {
   display: none !important;
 }
