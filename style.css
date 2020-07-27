@@ -333,8 +333,6 @@ body {
   #rules {
     left: 50vw;
     transform: translateX(-50%);
-    z-index: 10;
-    margin-top: 20px;
   }
   .game {
     width: 100vw;
