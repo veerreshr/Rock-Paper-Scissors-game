@@ -71,7 +71,6 @@ body {
   flex-wrap: wrap;
   justify-content: space-evenly;
   z-index: 1;
-  transform: translateY(-10%);
 }
 .row1,
 .row2 {
@@ -172,6 +171,7 @@ body {
   align-items: center;
   min-height: 60vh;
   flex-wrap: nowrap;
+  transform: translateY(-10%);
 }
 .you-picked,
 .house-picked {
