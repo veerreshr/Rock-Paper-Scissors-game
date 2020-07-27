@@ -254,7 +254,7 @@ body {
   top: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.387);
-  z-index: 10;
+  z-index: 20;
 }
 .modal-inner {
   display: flex;
@@ -333,10 +333,11 @@ body {
   #rules {
     left: 50vw;
     transform: translateX(-50%);
+    z-index: 10;
   }
   .game {
     width: 100vw;
-    height: 55vh;
+    height: 60vh;
     background-size: 60%;
   }
   .paper,
