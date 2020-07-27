@@ -1,15 +1,13 @@
 let points = localStorage.points || 0;
 document.getElementById("score").innerHTML = points;
-if (window.innerWidth <= 786) {
-  document.getElementsByClassName("xs-result")[0].classList.remove("hide");
-}
-window.addEventListener("resize", () => {
-  if (window.innerWidth <= 786) {
-    document.getElementsByClassName("xs-result")[0].classList.remove("hide");
-  } else {
-    document.getElementsByClassName("xs-result")[0].classList.add("hide");
-  }
-});
+
+// window.addEventListener("resize", () => {
+//   if (window.innerWidth <= 786) {
+//     document.getElementsByClassName("xs-result")[0].classList.remove("hide");
+//   } else {
+//     document.getElementsByClassName("xs-result")[0].classList.add("hide");
+//   }
+// });
 function playagain() {
   location.reload();
 }
@@ -77,6 +75,13 @@ function picked(n) {
     }
     if (tie) {
       setTimeout(() => {
+        if (window.innerWidth <= 786) {
+          document
+            .getElementsByClassName("xs-result")[0]
+            .classList.remove("hide");
+        } else {
+          document.getElementsByClassName("result")[0].classList.remove("hide");
+        }
         document.getElementsByClassName("winloosetie")[0].innerHTML = "TIE";
         document.getElementsByClassName("winloosetie")[1].innerHTML = "TIE";
         document
@@ -88,6 +93,13 @@ function picked(n) {
       }, 500);
     } else if (win) {
       setTimeout(() => {
+        if (window.innerWidth <= 786) {
+          document
+            .getElementsByClassName("xs-result")[0]
+            .classList.remove("hide");
+        } else {
+          document.getElementsByClassName("result")[0].classList.remove("hide");
+        }
         document
           .getElementsByClassName("you-picked")[0]
           .children[yourPick].classList.add("win");
@@ -105,6 +117,13 @@ function picked(n) {
       }, 500);
     } else {
       setTimeout(() => {
+        if (window.innerWidth <= 786) {
+          document
+            .getElementsByClassName("xs-result")[0]
+            .classList.remove("hide");
+        } else {
+          document.getElementsByClassName("result")[0].classList.remove("hide");
+        }
         document
           .getElementsByClassName("house-picked")[0]
           .children[housePick].classList.add("win");
