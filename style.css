@@ -146,12 +146,7 @@ body {
   );
   box-shadow: inset 0px -7px 0px 0px rgba(0, 0, 0, 0.3);
 }
-/* .scissor {
-  background-color: white;
-}
-.rock {
-  background-color: white;
-} */
+
 #rules {
   position: absolute;
   bottom: 5vh;

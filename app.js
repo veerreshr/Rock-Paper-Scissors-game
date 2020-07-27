@@ -1,13 +1,6 @@
 let points = localStorage.points || 0;
 document.getElementById("score").innerHTML = points;
 
-// window.addEventListener("resize", () => {
-//   if (window.innerWidth <= 786) {
-//     document.getElementsByClassName("xs-result")[0].classList.remove("hide");
-//   } else {
-//     document.getElementsByClassName("xs-result")[0].classList.add("hide");
-//   }
-// });
 function playagain() {
   location.reload();
 }
