@@ -176,6 +176,9 @@ body {
   color: white;
   letter-spacing: 2px;
 }
+.nl {
+  display: none;
+}
 .result {
   color: white;
   display: flex;
@@ -286,6 +289,9 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
+  .nl {
+    display: block;
+  }
   .modal-inner {
     justify-content: space-evenly;
     width: 100vw;
@@ -419,7 +425,7 @@ body {
   .house-picked center h2 {
     margin-top: 4vh;
     font-size: 14px;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     font-weight: bold;
   }
   .result {
