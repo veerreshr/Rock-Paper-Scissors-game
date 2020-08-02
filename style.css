@@ -418,8 +418,8 @@ body {
   .you-picked center h2,
   .house-picked center h2 {
     margin-top: 4vh;
-    font-size: 10px;
-    letter-spacing: 1px;
+    font-size: 14px;
+    letter-spacing: 2px;
     font-weight: bold;
   }
   .result {
