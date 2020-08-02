@@ -287,6 +287,9 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
+  body {
+    justify-content: space-around;
+  }
   .modal-inner {
     justify-content: space-evenly;
     width: 100vw;
