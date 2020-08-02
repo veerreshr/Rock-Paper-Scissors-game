@@ -437,7 +437,7 @@ body {
     width: 50vw;
     min-height: 10vh;
     color: white;
-    transform: translateY(-150%);
+    margin-bottom: 10vh;
   }
   .xs-result h1 {
     font-weight: bold;
