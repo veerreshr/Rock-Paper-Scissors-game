@@ -3,13 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <meta name="theme-color" content="#1f3756" />
+    <meta
+      name="Description"
+      content="Simple and interactive rock paper scissor game that works offline and can be your offline partner at times you find boring. "
+    />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./images/favicon-32x32.png"
+      href="./images/favicon.ico"
     />
+    <link rel="manifest" href="/manifest.json" />
     <title>Rock, Paper, Scissors</title>
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -39,9 +44,7 @@
     <div class="pick hide">
       <div class="you-picked">
         <div class="center">
-          <h2>
-            YOU PICKED
-          </h2>
+          <h2>YOU PICKED</h2>
         </div>
         <div class="paper hide">
           <img src="./images/icon-paper.svg" alt="" />
@@ -73,13 +76,9 @@
     </div>
     <div class="xs-result hide">
       <div class="center"><h1 class="winloosetie">Result</h1></div>
-      <button class="playagain hide" onclick="playagain()">
-        PLAY AGAIN
-      </button>
+      <button class="playagain hide" onclick="playagain()">PLAY AGAIN</button>
     </div>
-    <button id="rules" onclick="rules()">
-      RULES
-    </button>
+    <button id="rules" onclick="rules()">RULES</button>
     <div class="modal">
       <div class="modal-inner">
         <div class="modal-header">
@@ -102,7 +101,11 @@
         />
       </div>
     </div>
-
     <script src="./app.js"></script>
+    <script type="module">
+      import "https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate";
+      const el = document.createElement("pwa-update");
+      document.body.appendChild(el);
+    </script>
   </body>
 </html>

@@ -1,0 +1,17 @@
+{
+    "dir": "ltr",
+    "lang": "en",
+    "name": "Rock Paper Scissors",
+    "short_name": "RPS",
+    "scope": "/Rock-Paper-Scissors-game/",
+    "display": "standalone",
+    "start_url": "https://veerreshr.github.io/Rock-Paper-Scissors-game/",
+    "background_color": "#1f3756",
+    "theme_color": "#1f3756",
+    "description": "Simple and interactive rock paper scissor game that works offline and can be your offline partner at times you find boring. ",
+    "orientation": "portrait",
+    "related_applications": [],
+    "prefer_related_applications": false,
+    "icons": [{"src":"/images/android-chrome-192x192.png","sizes":"192x192","type":"image/png","purpose": "any maskable"},{"src":"/images/android-chrome-512x512.png","sizes":"512x512","type":"image/png"}],
+    "url": "https://veerreshr.github.io/Rock-Paper-Scissors-game/"
+}
