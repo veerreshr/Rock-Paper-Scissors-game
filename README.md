@@ -1,3 +1,3 @@
 # live at :
 
-[ROCK PAPER SCISSOR GAME](https://veerreshr.github.io/Rock-Paper-Scissors-game)
+[ROCK PAPER SCISSOR GAME](https://simple-rps.netlify.app/)
